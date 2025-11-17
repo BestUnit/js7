@@ -34,6 +34,21 @@
 // массив, содержащий пары чисел, которые в сумме должны
 // быть равны семи: (0:7), (1:6) и т.д.
 
+// const arrNum = [1,3,4,5,2,6,7,-2,0,9]
+// function function findPairs(arrNum) {
+//     let pairs = [];
+//     for (let i=0; i < arrNum.length; i++) {
+//         for (let h=i+1; h<arrNum.length; h++) {
+//             if (arrNum[i] + arrNum[h]===7) {
+//                 pairs.push([arrNum[i], arrNum[h]]);
+//             }
+//         }
+//     }
+//     return pairs;
+// }
+// const sumPairs= findPairs(arrNum);
+// console.log(sumPairs);
+
 // 4. Напишите код, создающий массив, который будет состоять из
 // первых букв слов строки str.
 
@@ -61,9 +76,29 @@
 // располагаются неупорядоченно, в массив цифр
 // расположенных по убыванию их значений.
 
+// let numArr= [1,3,2,70,58,25]
+
+// function numNew () {
+// let newNumArr= numArr.sort (function(a, b){
+//     return (a-b);
+// }
+// )
+// return newNumArr;
+// }
+// console.log(numNew());
+
 // 7. Напишите код, объединяющий три массива цифр, и
 // располагающий цифры, в полученном массиве, в порядке
 // убывания их значений через пробел.
+
+// const arr1 = [1, 2, 3];
+// const arr2 = [4, 5, 6];
+// const arr3 = [7, 8, 9];
+// function compilateArr(arr1, arr2, arr3) {
+//   let newArr = arr1.concat(arr2, arr3).sort((a, b) => b - a);
+//   let strComma = newArr.join(" ");
+//   return strComma;
+// }
 
 // 8. Дан двухмерный массив с числами, например [[1, 2, 3], [4, 5],
 // [6]]. Найдите сумму элементов этого массива. Массив, конечно
@@ -112,3 +147,8 @@
 // принимает значение, которым заполнять массив, а вторым -
 // сколько элементов должно быть в массиве. Пример:
 // arrayFill('x', 5) сделает массив ['x', 'x', 'x', 'x', 'x'].
+
+// function arrayFill(value, length) {
+//     return new Array(length).fill(value);
+// }
+// console.log(arrayFill("собака", 5));
